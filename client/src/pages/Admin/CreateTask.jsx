@@ -52,12 +52,65 @@ const CreateTask = () => {
   };
 
   // create task
-  const createTask = async () => {};
+  const createTask = async () => {
+    setLoading(true);
+
+    try {
+      const todoList = taskData.todoChecklist?.map((item) => ({
+        text: item,
+        completed: false,
+      }));
+
+      const response = await axiosInstance.post(API_PATHS.TASKS.CREATE_TASK, {
+        ...taskData,
+        dueData: new Date(taskData.dueData).toISOString(),
+        todoChecklist: todoList,
+      });
+
+      toast.success("Task Created Successfully");
+
+      clearData();
+    } catch (error) {
+      console.error("Error creating task:", error);
+      setLoading(false);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   // update task
   const updateTask = async () => {};
 
-  const handleSubmit = async () => {};
+  const handleSubmit = async () => {
+    setError(null);
+
+    // Input validation
+    if (!taskData.title.trim()) {
+      setError("Title is required.");
+      return;
+    }
+    if (!taskData.desc.trim()) {
+      setError("Description is required.");
+      return;
+    }
+    if (!taskData.dueData) {
+      setError("Due date is required.");
+      return;
+    }
+    if (!taskData.assignedTo?.length === 0) {
+      setError("Task not assigned to any number");
+      return;
+    }
+    if (!taskData.todoChecklist?.length === 0) {
+      setError("Add atleast one todo task.");
+      return;
+    }
+    if (taskId) {
+      updateTask();
+      return;
+    }
+    createTask();
+  };
 
   // get task info by id
   const getTaskDetailsById = async () => {};
