@@ -1,0 +1,41 @@
+[33mcommit 9370dfda15114108d27a58411079c36d26b722da[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Muhammad Fattan <fargamers22@gmail.com>
+Date:   Mon Dec 22 10:42:44 2025 +0700
+
+    Displaying Task Card (03:57:29)
+
+[33mcommit 5bb5ee8cc67082527aa6fc641e71f262be26e63d[m
+Author: Muhammad Fattan <fargamers22@gmail.com>
+Date:   Sun Dec 21 18:18:04 2025 +0700
+
+    Integrating Create Task API (03:41:13)
+
+[33mcommit 79605df01d20277f409c464fd5683d3cdd69e9cd[m
+Author: Muhammad Fattan <fargamers22@gmail.com>
+Date:   Wed Nov 19 14:34:02 2025 +0700
+
+    Building Create Task Form (03:33:44)
+
+[33mcommit 3ace3cca62c947057bfc86f40d6b2acd89573545[m
+Author: Muhammad Fattan <fargamers22@gmail.com>
+Date:   Sun Nov 16 19:40:27 2025 +0700
+
+    Building Create Task Form (03:27:30)
+
+[33mcommit 44c77226d87a8e9896ffd7c79fb847c8e6c316b6[m
+Author: Muhammad Fattan <fargamers22@gmail.com>
+Date:   Mon Nov 10 10:15:04 2025 +0700
+
+    adding create task
+
+[33mcommit acdc1b81525c302ab57defbf3f2e295a18d34538[m
+Author: Muhammad Fattan <fargamers22@gmail.com>
+Date:   Sun Nov 9 12:58:17 2025 +0700
+
+    CustomBarChart
+
+[33mcommit 0c112d424067403b3e9f6aa85aeeba79a32c33d3[m
+Author: Muhammad Fattan <fargamers22@gmail.com>
+Date:   Fri Nov 7 05:44:42 2025 +0700
+
+    first commit
