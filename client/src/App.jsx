@@ -18,8 +18,8 @@ import MyTasks from "./pages/User/MyTasks";
 import ViewTaskDetails from "./pages/User/ViewTaskDetails";
 import PrivateRoute from "./routes/PrivateRoute";
 import UserProvider from "./context/userContext";
-import { UserContext } from '../../context/userContext';
 import { Toaster } from "react-hot-toast";
+import UserContext from "./context/userContext";
 
 const App = () => {
   return (

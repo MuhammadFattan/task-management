@@ -4,7 +4,7 @@ import ProfilePhotoSelector from "../../components/Inputs/ProfilePhotoSelector";
 import Input from "../../components/Inputs/Input";
 import { Link, useNavigate } from "react-router-dom";
 import { API_PATHS } from "../../utils/apiPath";
-import { UserContext } from "../../context/userContext";
+import UserContext from '../../context/userContext';
 import uploadImage from "../../utils/uploadImage";
 
 const SignUp = () => {
