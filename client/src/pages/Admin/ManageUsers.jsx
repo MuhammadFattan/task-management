@@ -4,6 +4,7 @@ import axiosInstance from '../../utils/axiosInstance';
 import { API_PATHS } from '../../utils/apiPath';
 import { LuFileSpreadsheet } from 'react-icons/lu';
 import UserCard from '../../components/Cards/UserCard';
+import { toast } from "react-toastify";
 
 const ManageUsers = () => {
   const [allUsers, setAllUsers] = useState([]);

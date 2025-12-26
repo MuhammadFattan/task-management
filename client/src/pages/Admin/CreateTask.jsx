@@ -193,7 +193,7 @@ const CreateTask = () => {
     if (taskId) {
       getTaskDetailsById(taskId);
     }
-  }, [taskId]);
+  });
 
   return (
     <DashboardLayout activeMenu="Create Task">

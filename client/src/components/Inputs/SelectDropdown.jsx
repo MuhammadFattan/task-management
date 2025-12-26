@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { LuChevronDown } from "react-icons/lu";
 
-const SelectDropdown = ({ options, value, onChange, placeholder }) => {
+const SelectDropdown = ({ options, value, placeholder }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleSelect = (option) => {

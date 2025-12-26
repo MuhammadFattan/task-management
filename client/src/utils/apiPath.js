@@ -19,9 +19,13 @@ export const API_PATHS = {
     GET_DASHBOARD_DATA: "/api/tasks/dashboard-data",
     GET_USER_DASHBOARD_DATA: "/api/tasks/use-dashboard-data",
     GET_ALL_TASKS: "/api/tasks",
-    GET_TASK_BY_ID: "/api/tasks",
+    GET_TASK_BY_ID: (taskId) => `/api/tasks/${taskId}`,
+    CREATE_TASKS: "/api/tasks",
     UPDATE_TASKS: (taskId) => `/api/tasks/${taskId}`,
     DELETE_TASKS: (taskId) => `/api/tasks/${taskId}`,
+
+    UPDATE_TASK_STATUS: (taskId) => `/api/tasks${taskId}/status`,
+    UPDATE_TODO_CHECKLIST: (taskId) => `/api/tasks/${taskId}/todo`,
   },
 
   REPORTS: {
